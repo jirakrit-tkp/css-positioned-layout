@@ -3,3 +3,60 @@ body {
 }
 
 /* Start coding here */
+
+.bubble-tea-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+}
+
+.bubble-tea-image-wrapper {
+  position: relative;
+  background: #fff;
+  /* border-radius: 8px; */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  overflow: hidden;
+  max-width: 600px;
+  padding: 8px;
+  /* border: 4px solid #fff; */
+}
+
+.bubble-tea-image-wrapper-inner {
+  position: relative;
+}
+
+.bubble-tea-image {
+  display: flex;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.bubble-tea-badge {
+  position: absolute;
+  top: 16px;
+  right: 8px;
+  background: rgba(80,80,80,0.8);
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.2em 1em;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.bubble-tea-caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: serif;
+  padding: 0.5em 0.7em;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.7);
+  box-sizing: border-box;
+}
