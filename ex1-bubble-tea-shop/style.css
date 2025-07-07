@@ -3,3 +3,28 @@ body {
 }
 
 /* Start coding here */
+.img-container {
+  position: relative;
+  display: inline-block;
+}
+
+.top-right-label {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  background: rgba(103, 101, 101, 0.5); /* หรือจะไม่ใส่ก็ได้ */
+  padding: 4px 15px;
+  font-size: 20px;
+  border-radius: 0 0 0 0px;
+  color: white;
+}
+
+.bottom-left-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  padding: 8px 12px;
+  font-size: 25px;
+  border-radius: 0 0 0 0px;
+}

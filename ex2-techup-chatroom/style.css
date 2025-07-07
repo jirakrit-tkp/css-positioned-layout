@@ -1,1 +1,104 @@
 /* Start coding here */
+body {
+  margin: 0;
+  font-family: 'Sarabun', sans-serif;
+  background: #fff;
+}
+
+.header {
+  background: #888;
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 16px 12px;
+  font-family: 'Sarabun', serif;
+}
+
+.chat-container {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  margin-top: 24px;
+}
+
+.chat-messages {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-end;
+}
+
+.message {
+  max-width: 350px;
+  padding: 16px 24px;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  word-break: break-word;
+}
+
+.message-user {
+  background: #00c000;
+  color: #fff;
+  align-self: flex-end;
+  margin-left: 40px;
+  width: 200px;
+  position: relative;
+}
+
+.message-user::after {
+    content: "";
+    position: absolute;
+    right: -8px;      /* ขยับออกไปนอกกล่อง */
+    top: 10px;         /* ปรับตำแหน่งแนวตั้ง */
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 16px solid #00c000; /* สีเดียวกับกล่อง */
+    transform: rotate(-40deg);
+  }
+
+.message-other {
+  background: #eaeaea;
+  color: #333;
+  align-self: flex-end;
+  margin-left: 40px;
+  width: 200px;
+}
+
+.close-btn {
+    font-size: 1.2rem;
+    color: #ffffff;
+    cursor: pointer;
+    background: #4f4d4d;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    transition: background 0.2s, color 0.2s;
+  }
+  
+  .close-btn:hover {
+    background: #bebaba;
+    color: #333;
+  }
+
+.emoji-panel {
+  position: absolute;
+  left: 40px;
+  top: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
